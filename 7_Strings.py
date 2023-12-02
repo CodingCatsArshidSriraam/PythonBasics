@@ -153,3 +153,66 @@ print(movie_name.find("O"));  # Output: 11
 print("Global functions: len()")
 movie_name = "Aayirathil Oruvan";
 print(len(movie_name));
+
+# in operator
+# The in operator lets you check if a string contains a substring.
+print("In operator:")
+country = "south korea"
+print("s" in country) # True
+print("si" in country) # False
+print(" ko" in country) # True
+print("korea" in country) # True
+print("Korea".lower() in country.lower()) # True 
+
+# Add special charcters to a string.
+# Escaping is a way to add special characters into a string.
+# name = "Kim Yoon"s son" # Wd cant use double quotes inside double quotes in Python. - Error
+# Way 1: Backslash
+name = "Kom Yoon\"s son"
+print(name)
+name = 'Kom Yoon\'s son'
+print(name)
+# Way 2 : Single quotes inside double qutes , double quotes inside single quotes.
+name = "Kim Yoon's son"
+print(name)
+name = 'Kim Yoon"s son'
+print(name)
+
+# special formatting characters
+print("special formatting characters")
+#\t for tab
+print("Yuun\t34\tmale")
+
+#  \n for new line 
+print("Welcome to the ATM\nPlease enter your pin number")
+
+# \\ for the backslash, If you want to use backslash in the string.
+print("6\\3") # 1 blackslash - give 2 backslash
+print("6\\\\3") # 2 blackslashes - give 4 backslashes
+
+print("6\\\3") # Heart
+
+# Indexing
+print("Indexing")
+# String is indexed like an array or Python list.
+# Using square brackets.
+# Positive indexing starts from zero (First item).
+# Negative indexing starts from last item which is -1.
+country = "United States of America"
+print(country[0]) # U, Space is also a character.
+# Start index , Stop index, Step index
+print(country[0:6]) # united
+print(country[0:6:1]) # United
+print(country[0:6:2]) # Uie
+# Start index is not mentioned then the default is zero.
+# Stop index it will to the last character of the string.
+# Step index is not mentioned then the default is 1.
+print(country[:6])# United
+print(country[0:]) # United States of America
+print(country[0:6]) # united
+print(country[:]) # United States of America
+print(country) # United States of America
+# Last character or Last item , Stack.
+print(country[-1]) # a , last character
+
+
